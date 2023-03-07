@@ -106,7 +106,7 @@ Public Class Form1
             chkHighlightCurrentNode.Checked = My.Settings.HighlightNode
 
             'check if help file present and then update visibility of inline help section on Help tab
-            If File.Exists(Application.StartupPath() + "/DogeNodes.chm") Then
+            If File.Exists(Application.StartupPath() + "/GRSNodes.chm") Then
                 gbxInlineHelp.Visible = True
             Else
                 gbxInlineHelp.Visible = False
@@ -117,9 +117,9 @@ Public Class Form1
             trkYellowToRed.Value = lblYellowToRed.Text
 
             'Display application version information and prompt user if a new version is available
-            DogeNodes_Version()
+            GRSNodes_Version()
             If btnUpdateNow.Enabled = True Then
-                MessageBox.Show("A new version of DogeNodes is available. Please click on the 'Update Now' button in settings to update", "DogeNodes - Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("A new version of GRSNodes is available. Please click on the 'Update Now' button in settings to update", "GRSNodes - Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
             'Configure map control on node map tab
@@ -218,7 +218,7 @@ Public Class Form1
                 'Carry on with rest of subroutine using the last value of json stored in the global variable
             Else
                 'No global variable, so put out message and close application
-                MessageBox.Show("Internet connection required for application. Please try again later. Application will close", "DogeNodes - Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Internet connection required for application. Please try again later. Application will close", "GRSNodes - Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End
             End If
         End Try
@@ -1515,22 +1515,22 @@ Public Class Form1
             If StatusColour = "Grey" Then
                 'Use grey icon as Node not valid
                 NotifyIcon1.Icon = My.Resources.Grey1
-                NotifyIcon1.Text = "DogeNodes - Node Invalid"
+                NotifyIcon1.Text = "GRSNodes - Node Invalid"
             ElseIf StatusColour = "Green" And UpToDateColour = "Green" And CurrentColour = "Green" Then
                 'Use green icon as all node parameters are OK
                 NotifyIcon1.Icon = My.Resources.Green1
-                NotifyIcon1.Text = "DogeNodes - Node Healthy"
+                NotifyIcon1.Text = "GRSNodes - Node Healthy"
             Else
                 'At least one node parameter is showing an issue
                 NotifyIcon1.Icon = My.Resources.Red1
                 If StatusColour = "Red" Then
-                    NotifyIcon1.Text = "DogeNodes - Node Offline"
+                    NotifyIcon1.Text = "GRSNodes - Node Offline"
                 ElseIf UpToDateColour = "Yellow" Then
-                    NotifyIcon1.Text = "DogeNodes - Node Block Height Slightly Behind"
+                    NotifyIcon1.Text = "GRSNodes - Node Block Height Slightly Behind"
                 ElseIf UpToDateColour = "Red" Then
-                    NotifyIcon1.Text = "DogeNodes - Node Block Height Significantly Behind"
+                    NotifyIcon1.Text = "GRSNodes - Node Block Height Significantly Behind"
                 Else
-                    NotifyIcon1.Text = "DogeNodes - Node Agent Out of Date"
+                    NotifyIcon1.Text = "GRSNodes - Node Agent Out of Date"
                 End If
             End If
 
@@ -1638,15 +1638,15 @@ Public Class Form1
             'Conditional Settings
             If Severity = "Warning" Then
                 'Warning popup
-                Notification.TitleText = "DOGENODES WARNING"
+                Notification.TitleText = "GRSNODES WARNING"
                 Notification.Image = My.Resources.Yellow
             ElseIf Severity = "Error" Then
                 'Error popup
-                Notification.TitleText = "DOGENODES ERROR"
+                Notification.TitleText = "GRSNODES ERROR"
                 Notification.Image = My.Resources.Red
             Else
                 'Anything else
-                Notification.TitleText = "DOGENODES"
+                Notification.TitleText = "GRSNODES"
                 Notification.Image = My.Resources.Grey
             End If
 
@@ -1729,11 +1729,11 @@ Public Class Form1
             Dim mail As New MailMessage()
 
             'set the addresses
-            mail.From = New MailAddress("notifications@dogenodes")
+            mail.From = New MailAddress("notifications@grsnodes")
             mail.[To].Add(txtEmailAddress.Text)
 
             'set the content
-            Dim Subject As String = "DogeNodes " + Severity
+            Dim Subject As String = "GRSNodes " + Severity
             mail.Subject = Subject
             mail.IsBodyHtml = False
             mail.Body = Message
@@ -2062,7 +2062,7 @@ Public Class Form1
 
         Try
             'Get path to users desktop
-            Dim DesktopPath As String = "C:\Users\" + Environment.UserName + "\Desktop\DogeNodes.log"
+            Dim DesktopPath As String = "C:\Users\" + Environment.UserName + "\Desktop\grsNodes.log"
 
             'Copy log to the users desktop
             If File.Exists(LogFileName) Then
@@ -2141,7 +2141,7 @@ Public Class Form1
 
         Catch
             'skip normal notification methods as this is run in a separate thread
-            MessageBox.Show("There was a problem writing the IP locations to a text file", "DogeNodes - Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("There was a problem writing the IP locations to a text file", "GRSNodes - Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub
@@ -2338,7 +2338,7 @@ Public Class Form1
         Dim Response As Boolean = False
 
         Try
-            Dim Answer As DialogResult = MessageBox.Show(Message + " - Are you sure?", "DogeNodes", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+            Dim Answer As DialogResult = MessageBox.Show(Message + " - Are you sure?", "GRSNodes", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
 
             If Answer = DialogResult.Yes Then
                 Response = True
@@ -2434,7 +2434,7 @@ Public Class Form1
 
             'Create a shortcut to the current application in the designated path
             oShell = CreateObject("WScript.Shell")
-            oLink = oShell.CreateShortcut(ShortCutPath + "\DogeNodes.lnk")
+            oLink = oShell.CreateShortcut(ShortCutPath + "\GRSNodes.lnk")
             oLink.TargetPath = Application.ExecutablePath
             oLink.WindowStyle = 1
             oLink.Save()
@@ -2450,8 +2450,8 @@ Public Class Form1
 
         Try
             'Delete the shortcut to the current application in the designated path
-            If File.Exists(ShortCutPath + "\DogeNodes.lnk") Then
-                File.Delete(ShortCutPath + "\DogeNodes.lnk")
+            If File.Exists(ShortCutPath + "\GRSNodes.lnk") Then
+                File.Delete(ShortCutPath + "\GRSNodes.lnk")
                 Notification_Display("Information", "Shortcut has been deleted from (" + ShortCutPath + ")")
             End If
 
@@ -2603,9 +2603,9 @@ Public Class Form1
 
     End Sub
 
-    Private Sub DogeNodes_Version()
+    Private Sub GRSNodes_Version()
 
-        'Check for updates to dogenodes
+        'Check for updates to grsnodes
 
         Dim jsonVersion As String
         Dim client As New WebDownload(2000)
@@ -2614,7 +2614,7 @@ Public Class Form1
             'Set default values in case github update cannot be obtained
             lblInstalledVersionValue.Text = My.Settings.DogeNodesVersion
             lblLatestVersionValue.Text = My.Settings.DogeNodesVersion
-            lblUpdateStatus.Text = "Your current version of DogeNodes is up to date"
+            lblUpdateStatus.Text = "Your current version of GRSNodes is up to date"
             btnUpdateNow.Enabled = False
 
             'Retrieve latest version from github
@@ -2623,9 +2623,9 @@ Public Class Form1
             client.Headers.Add("user-agent", "request")
 
             Try
-                Notification_Display("Information", "The API download of latest DogeNodes version from github has started")
+                Notification_Display("Information", "The API download of latest GRSNodes version from github has started")
                 jsonVersion = client.DownloadString("https://api.github.com/repos/starglancer/dogenodes/releases/latest")
-                Notification_Display("Information", "The API download of latest DogeNodes version from github has completed successfully")
+                Notification_Display("Information", "The API download of latest GRSNodes version from github has completed successfully")
             Catch ex As Exception
                 Notification_Display("Error", "Github API is unreachable. Please check network connection", ex)
                 'Skip the rest of the subroutine if github API unreachable
@@ -2638,20 +2638,20 @@ Public Class Form1
             lblLatestVersionValue.Text = Version
 
             If lblLatestVersionValue.Text <> lblInstalledVersionValue.Text Then
-                lblUpdateStatus.Text = "There is an updated version of DogeNodes available"
+                lblUpdateStatus.Text = "There is an updated version of GRSNodes available"
                 btnUpdateNow.Enabled = True
             End If
 
-            Notification_Display("Information", "The latest DogeNodes version has been successfully identified as " + Version)
+            Notification_Display("Information", "The latest GRSNodes version has been successfully identified as " + Version)
         Catch ex As Exception
-            Notification_Display("Error", "There was an error identifying the latest DogeNodes version. It will be assumed to be " + My.Settings.DogeNodesVersion, ex)
+            Notification_Display("Error", "There was an error identifying the latest GRSNodes version. It will be assumed to be " + My.Settings.DogeNodesVersion, ex)
         End Try
 
     End Sub
 
     Private Sub btnCheckForUpdate_Click(sender As Object, e As EventArgs) Handles btnCheckForUpdate.Click
 
-        DogeNodes_Version()
+        GRSNodes_Version()
 
     End Sub
 
@@ -2664,7 +2664,7 @@ Public Class Form1
 
     Private Sub btnDefaultPort_Click(sender As Object, e As EventArgs) Handles btnDefaultPort.Click
 
-        'Set Port to default Dogecoin Core port
+        'Set Port to default GRScoin Core port
         txtPort.Text = My.Settings.DefaultPort
 
     End Sub
@@ -2794,7 +2794,7 @@ Public Class Form1
         'Send an email help request using the default email application
 
         Try
-            Process.Start("mailto:" + My.Settings.EmailHelp + "?subject=DogeNodes%20Help%20Required")
+            Process.Start("mailto:" + My.Settings.EmailHelp + "?subject=GRSNodes%20Help%20Required")
 
             Notification_Display("Information", "Email help request was sent successfully")
         Catch ex As Exception
@@ -2808,7 +2808,7 @@ Public Class Form1
         'Open help file
 
         Try
-            Process.Start(Application.StartupPath + "/DogeNodes.chm")
+            Process.Start(Application.StartupPath + "/GRSNodes.chm")
 
             Notification_Display("Information", "Help file was opened successfully")
         Catch ex As Exception
@@ -2952,7 +2952,7 @@ Public Class Form1
 
         Try
             'Get confirmation before closing
-            If Request_Confirmation("This will close the DogeNodes application") = True Then
+            If Request_Confirmation("This will close the GRSNodes application") = True Then
                 'Close application even if minimise on close is selected
                 ForceCloseFlag = True
                 Me.Close()
