@@ -534,9 +534,9 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("v1.40")>  _
-        Public ReadOnly Property DogeNodesVersion() As String
+        Public ReadOnly Property GRSNodesVersion() As String
             Get
-                Return CType(Me("DogeNodesVersion"),String)
+                Return CType(Me("GRSNodesVersion"),String)
             End Get
         End Property
         

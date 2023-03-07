@@ -2612,8 +2612,8 @@ Public Class Form1
 
         Try
             'Set default values in case github update cannot be obtained
-            lblInstalledVersionValue.Text = My.Settings.DogeNodesVersion
-            lblLatestVersionValue.Text = My.Settings.DogeNodesVersion
+            lblInstalledVersionValue.Text = My.Settings.GRSNodesVersion
+            lblLatestVersionValue.Text = My.Settings.GRSNodesVersion
             lblUpdateStatus.Text = "Your current version of GRSNodes is up to date"
             btnUpdateNow.Enabled = False
 
@@ -2644,7 +2644,7 @@ Public Class Form1
 
             Notification_Display("Information", "The latest GRSNodes version has been successfully identified as " + Version)
         Catch ex As Exception
-            Notification_Display("Error", "There was an error identifying the latest GRSNodes version. It will be assumed to be " + My.Settings.DogeNodesVersion, ex)
+            Notification_Display("Error", "There was an error identifying the latest GRSNodes version. It will be assumed to be " + My.Settings.GRSNodesVersion, ex)
         End Try
 
     End Sub

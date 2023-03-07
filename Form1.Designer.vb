@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabSummary = New System.Windows.Forms.TabPage()
@@ -282,7 +282,7 @@ Partial Class Form1
         Me.btnRunGRScoinNode.Size = New System.Drawing.Size(120, 23)
         Me.btnRunGRScoinNode.TabIndex = 6
         Me.btnRunGRScoinNode.Text = "Run Your Own Node"
-        Me.ToolTip1.SetToolTip(Me.btnRunGRScoinNode, "Run your own dogecoin core node - go to download site")
+        Me.ToolTip1.SetToolTip(Me.btnRunGRScoinNode, "Run your own groestlcoin core node - go to download site")
         Me.btnRunGRScoinNode.UseVisualStyleBackColor = True
         '
         'lblNodes
@@ -396,24 +396,24 @@ Partial Class Form1
         Me.grdStatistics.AllowUserToResizeColumns = False
         Me.grdStatistics.AllowUserToResizeRows = False
         Me.grdStatistics.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grdStatistics.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grdStatistics.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
         Me.grdStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdStatistics.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Value, Me.Count, Me.BarChart})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.grdStatistics.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grdStatistics.DefaultCellStyle = DataGridViewCellStyle23
         Me.grdStatistics.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.grdStatistics.GridColor = System.Drawing.Color.White
         Me.grdStatistics.Location = New System.Drawing.Point(72, 64)
@@ -442,10 +442,10 @@ Partial Class Form1
         '
         'BarChart
         '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkTurquoise
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkTurquoise
-        Me.BarChart.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.DarkTurquoise
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.DarkTurquoise
+        Me.BarChart.DefaultCellStyle = DataGridViewCellStyle22
         Me.BarChart.HeaderText = "Bar Chart"
         Me.BarChart.Name = "BarChart"
         Me.BarChart.ReadOnly = True
@@ -610,7 +610,7 @@ Partial Class Form1
         Me.ComVersion.Name = "ComVersion"
         Me.ComVersion.Size = New System.Drawing.Size(197, 21)
         Me.ComVersion.TabIndex = 2
-        Me.ToolTip1.SetToolTip(Me.ComVersion, "Select the dogecoin node agent version filter to use")
+        Me.ToolTip1.SetToolTip(Me.ComVersion, "Select the groestlcoin node agent version filter to use")
         '
         'comHeight
         '
@@ -639,24 +639,24 @@ Partial Class Form1
         Me.grdNodeList.AllowUserToResizeColumns = False
         Me.grdNodeList.AllowUserToResizeRows = False
         Me.grdNodeList.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grdNodeList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grdNodeList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle24
         Me.grdNodeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdNodeList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.grdNodeList.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grdNodeList.DefaultCellStyle = DataGridViewCellStyle25
         Me.grdNodeList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.grdNodeList.GridColor = System.Drawing.Color.White
         Me.grdNodeList.Location = New System.Drawing.Point(399, 21)
@@ -762,7 +762,7 @@ Partial Class Form1
         Me.btnDefaultPort.Name = "btnDefaultPort"
         Me.btnDefaultPort.Size = New System.Drawing.Size(23, 20)
         Me.btnDefaultPort.TabIndex = 10
-        Me.ToolTip1.SetToolTip(Me.btnDefaultPort, "Set port to the default dogecoin core port")
+        Me.ToolTip1.SetToolTip(Me.btnDefaultPort, "Set port to the default groestlcoin core port")
         Me.btnDefaultPort.UseVisualStyleBackColor = True
         '
         'gbxDetails
@@ -1131,7 +1131,7 @@ Partial Class Form1
         Me.gbxUpdate.Size = New System.Drawing.Size(715, 100)
         Me.gbxUpdate.TabIndex = 7
         Me.gbxUpdate.TabStop = False
-        Me.gbxUpdate.Text = "Update DogeNodes"
+        Me.gbxUpdate.Text = "Update GRSNodes"
         '
         'btnUpdateNow
         '
@@ -1141,7 +1141,7 @@ Partial Class Form1
         Me.btnUpdateNow.Size = New System.Drawing.Size(77, 23)
         Me.btnUpdateNow.TabIndex = 6
         Me.btnUpdateNow.Text = "Update Now"
-        Me.ToolTip1.SetToolTip(Me.btnUpdateNow, "Update now to the latest version of DogeNodes")
+        Me.ToolTip1.SetToolTip(Me.btnUpdateNow, "Update now to the latest version of GRSNodes")
         Me.btnUpdateNow.UseVisualStyleBackColor = True
         '
         'btnCheckForUpdate
@@ -1152,7 +1152,7 @@ Partial Class Form1
         Me.btnCheckForUpdate.Size = New System.Drawing.Size(101, 23)
         Me.btnCheckForUpdate.TabIndex = 5
         Me.btnCheckForUpdate.Text = "Check for Update"
-        Me.ToolTip1.SetToolTip(Me.btnCheckForUpdate, "Check for latest available version of DogeNodes")
+        Me.ToolTip1.SetToolTip(Me.btnCheckForUpdate, "Check for latest available version of GRSNodes")
         Me.btnCheckForUpdate.UseVisualStyleBackColor = True
         '
         'lblUpdateStatus
@@ -1172,7 +1172,7 @@ Partial Class Form1
         Me.lblLatestVersionValue.Size = New System.Drawing.Size(74, 13)
         Me.lblLatestVersionValue.TabIndex = 3
         Me.lblLatestVersionValue.Text = "Latest Version"
-        Me.ToolTip1.SetToolTip(Me.lblLatestVersionValue, "Latest available version of DogeNodes")
+        Me.ToolTip1.SetToolTip(Me.lblLatestVersionValue, "Latest available version of GRSNodes")
         '
         'lblInstalledVersionValue
         '
@@ -1182,7 +1182,7 @@ Partial Class Form1
         Me.lblInstalledVersionValue.Size = New System.Drawing.Size(84, 13)
         Me.lblInstalledVersionValue.TabIndex = 2
         Me.lblInstalledVersionValue.Text = "Installed Version"
-        Me.ToolTip1.SetToolTip(Me.lblInstalledVersionValue, "Currently installed version of DogeNodes")
+        Me.ToolTip1.SetToolTip(Me.lblInstalledVersionValue, "Currently installed version of GRSNodes")
         '
         'lblLatestVersion
         '
@@ -1672,7 +1672,7 @@ Partial Class Form1
         Me.chkDesktopShortcut.Size = New System.Drawing.Size(139, 17)
         Me.chkDesktopShortcut.TabIndex = 8
         Me.chkDesktopShortcut.Text = "Add shortcut to desktop"
-        Me.ToolTip1.SetToolTip(Me.chkDesktopShortcut, "Add a shortcut for DogeNodes to the desktop")
+        Me.ToolTip1.SetToolTip(Me.chkDesktopShortcut, "Add a shortcut for GRSNodes to the desktop")
         Me.chkDesktopShortcut.UseVisualStyleBackColor = True
         '
         'chkStartWithWindows
