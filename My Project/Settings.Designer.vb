@@ -602,10 +602,10 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/dogecoin/dogecoin")>  _
-        Public ReadOnly Property DogecoinCoreURL() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("https://www.groestlcoin.org/groestlcoin-core-wallet/")>  _
+        Public ReadOnly Property GRScoinCoreURL() As String
             Get
-                Return CType(Me("DogecoinCoreURL"),String)
+                Return CType(Me("GRScoinCoreURL"),String)
             End Get
         End Property
         

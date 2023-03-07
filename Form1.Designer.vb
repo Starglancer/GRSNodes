@@ -25,13 +25,13 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabSummary = New System.Windows.Forms.TabPage()
-        Me.btnRunDogecoinNode = New System.Windows.Forms.Button()
+        Me.btnRunGRScoinNode = New System.Windows.Forms.Button()
         Me.lblNodes = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.lblTotalNodesValue = New System.Windows.Forms.Label()
@@ -42,6 +42,9 @@ Partial Class Form1
         Me.lblRowCount = New System.Windows.Forms.Label()
         Me.lblRows = New System.Windows.Forms.Label()
         Me.grdStatistics = New System.Windows.Forms.DataGridView()
+        Me.Value = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Count = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BarChart = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.comStatistics = New System.Windows.Forms.ComboBox()
         Me.lblStatisticsSelect = New System.Windows.Forms.Label()
         Me.tabNodeList = New System.Windows.Forms.TabPage()
@@ -200,9 +203,6 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.timTextbox = New System.Windows.Forms.Timer(Me.components)
         Me.hlpDogeNodes = New System.Windows.Forms.HelpProvider()
-        Me.Value = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Count = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BarChart = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1.SuspendLayout()
         Me.tabSummary.SuspendLayout()
         CType(Me.pbxDogecoin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -256,7 +256,7 @@ Partial Class Form1
         'tabSummary
         '
         Me.tabSummary.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.tabSummary.Controls.Add(Me.btnRunDogecoinNode)
+        Me.tabSummary.Controls.Add(Me.btnRunGRScoinNode)
         Me.tabSummary.Controls.Add(Me.lblNodes)
         Me.tabSummary.Controls.Add(Me.lblTotal)
         Me.tabSummary.Controls.Add(Me.lblTotalNodesValue)
@@ -273,17 +273,17 @@ Partial Class Form1
         Me.tabSummary.TabIndex = 1
         Me.tabSummary.Text = "Summary"
         '
-        'btnRunDogecoinNode
+        'btnRunGRScoinNode
         '
-        Me.hlpDogeNodes.SetHelpKeyword(Me.btnRunDogecoinNode, "")
-        Me.btnRunDogecoinNode.Location = New System.Drawing.Point(57, 324)
-        Me.btnRunDogecoinNode.Name = "btnRunDogecoinNode"
-        Me.hlpDogeNodes.SetShowHelp(Me.btnRunDogecoinNode, False)
-        Me.btnRunDogecoinNode.Size = New System.Drawing.Size(120, 23)
-        Me.btnRunDogecoinNode.TabIndex = 6
-        Me.btnRunDogecoinNode.Text = "Run Your Own Node"
-        Me.ToolTip1.SetToolTip(Me.btnRunDogecoinNode, "Run your own dogecoin core node - go to download site")
-        Me.btnRunDogecoinNode.UseVisualStyleBackColor = True
+        Me.hlpDogeNodes.SetHelpKeyword(Me.btnRunGRScoinNode, "")
+        Me.btnRunGRScoinNode.Location = New System.Drawing.Point(57, 324)
+        Me.btnRunGRScoinNode.Name = "btnRunGRScoinNode"
+        Me.hlpDogeNodes.SetShowHelp(Me.btnRunGRScoinNode, False)
+        Me.btnRunGRScoinNode.Size = New System.Drawing.Size(120, 23)
+        Me.btnRunGRScoinNode.TabIndex = 6
+        Me.btnRunGRScoinNode.Text = "Run Your Own Node"
+        Me.ToolTip1.SetToolTip(Me.btnRunGRScoinNode, "Run your own dogecoin core node - go to download site")
+        Me.btnRunGRScoinNode.UseVisualStyleBackColor = True
         '
         'lblNodes
         '
@@ -424,6 +424,33 @@ Partial Class Form1
         Me.grdStatistics.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.grdStatistics.Size = New System.Drawing.Size(643, 283)
         Me.grdStatistics.TabIndex = 2
+        '
+        'Value
+        '
+        Me.Value.HeaderText = "Value"
+        Me.Value.Name = "Value"
+        Me.Value.ReadOnly = True
+        Me.Value.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Value.Width = 240
+        '
+        'Count
+        '
+        Me.Count.HeaderText = "Count"
+        Me.Count.Name = "Count"
+        Me.Count.ReadOnly = True
+        Me.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'BarChart
+        '
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkTurquoise
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkTurquoise
+        Me.BarChart.DefaultCellStyle = DataGridViewCellStyle2
+        Me.BarChart.HeaderText = "Bar Chart"
+        Me.BarChart.Name = "BarChart"
+        Me.BarChart.ReadOnly = True
+        Me.BarChart.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.BarChart.Width = 300
         '
         'comStatistics
         '
@@ -2094,33 +2121,6 @@ Partial Class Form1
         '
         Me.hlpDogeNodes.HelpNamespace = "DogeNodes.chm"
         '
-        'Value
-        '
-        Me.Value.HeaderText = "Value"
-        Me.Value.Name = "Value"
-        Me.Value.ReadOnly = True
-        Me.Value.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Value.Width = 240
-        '
-        'Count
-        '
-        Me.Count.HeaderText = "Count"
-        Me.Count.Name = "Count"
-        Me.Count.ReadOnly = True
-        Me.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'BarChart
-        '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkTurquoise
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkTurquoise
-        Me.BarChart.DefaultCellStyle = DataGridViewCellStyle2
-        Me.BarChart.HeaderText = "Bar Chart"
-        Me.BarChart.Name = "BarChart"
-        Me.BarChart.ReadOnly = True
-        Me.BarChart.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.BarChart.Width = 300
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2330,7 +2330,7 @@ Partial Class Form1
     Friend WithEvents timTextbox As Timer
     Friend WithEvents lblAgentPort As Label
     Friend WithEvents comPort As ComboBox
-    Friend WithEvents btnRunDogecoinNode As Button
+    Friend WithEvents btnRunGRScoinNode As Button
     Friend WithEvents hlpDogeNodes As HelpProvider
     Friend WithEvents tabHelp As TabPage
     Friend WithEvents gbxInlineHelp As GroupBox
