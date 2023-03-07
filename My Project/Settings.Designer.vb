@@ -593,7 +593,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("22556")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1331")>  _
         Public ReadOnly Property DefaultPort() As String
             Get
                 Return CType(Me("DefaultPort"),String)

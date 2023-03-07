@@ -153,7 +153,7 @@
       <Value Profile="(Default)">https://sourceforge.net/projects/dogenodes/files/latest/download</Value>
     </Setting>
     <Setting Name="DefaultPort" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">22556</Value>
+      <Value Profile="(Default)">1331</Value>
     </Setting>
     <Setting Name="GRScoinCoreURL" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://www.groestlcoin.org/groestlcoin-core-wallet/</Value>
