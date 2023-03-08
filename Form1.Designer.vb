@@ -1947,9 +1947,9 @@ Partial Class Form1
         Me.lblWebsiteHelp.AutoSize = True
         Me.lblWebsiteHelp.Location = New System.Drawing.Point(49, 31)
         Me.lblWebsiteHelp.Name = "lblWebsiteHelp"
-        Me.lblWebsiteHelp.Size = New System.Drawing.Size(287, 13)
+        Me.lblWebsiteHelp.Size = New System.Drawing.Size(284, 13)
         Me.lblWebsiteHelp.TabIndex = 0
-        Me.lblWebsiteHelp.Text = "Click the button on the right to visit the DogeNodes website"
+        Me.lblWebsiteHelp.Text = "Click the button on the right to visit the GRSNodes website"
         '
         'gbxTooltips
         '
@@ -1977,9 +1977,9 @@ Partial Class Form1
         Me.lblHelpApproach.AutoSize = True
         Me.lblHelpApproach.Location = New System.Drawing.Point(174, 15)
         Me.lblHelpApproach.Name = "lblHelpApproach"
-        Me.lblHelpApproach.Size = New System.Drawing.Size(378, 13)
+        Me.lblHelpApproach.Size = New System.Drawing.Size(375, 13)
         Me.lblHelpApproach.TabIndex = 0
-        Me.lblHelpApproach.Text = "There are a number of ways you can get help regarding the use of DogeNodes"
+        Me.lblHelpApproach.Text = "There are a number of ways you can get help regarding the use of GRSNodes"
         '
         'StatusStrip1
         '
