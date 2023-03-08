@@ -132,6 +132,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="GRSNodes.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\grs.ico" />
     <None Include="Resources\grs.png" />
     <None Include="Resources\Turquoise.png" />
