@@ -202,7 +202,7 @@ Partial Class Form1
         Me.timUpdateCache = New System.Windows.Forms.Timer(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.timTextbox = New System.Windows.Forms.Timer(Me.components)
-        Me.hlpDogeNodes = New System.Windows.Forms.HelpProvider()
+        Me.hlpGRSNodes = New System.Windows.Forms.HelpProvider()
         Me.TabControl1.SuspendLayout()
         Me.tabSummary.SuspendLayout()
         CType(Me.pbxDogecoin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -263,22 +263,22 @@ Partial Class Form1
         Me.tabSummary.Controls.Add(Me.lblCredit)
         Me.tabSummary.Controls.Add(Me.lblMainTitle)
         Me.tabSummary.Controls.Add(Me.pbxDogecoin)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabSummary, "topic-summary")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabSummary, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabSummary, "topic-summary")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabSummary, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabSummary.Location = New System.Drawing.Point(4, 22)
         Me.tabSummary.Name = "tabSummary"
         Me.tabSummary.Padding = New System.Windows.Forms.Padding(3)
-        Me.hlpDogeNodes.SetShowHelp(Me.tabSummary, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabSummary, True)
         Me.tabSummary.Size = New System.Drawing.Size(795, 404)
         Me.tabSummary.TabIndex = 1
         Me.tabSummary.Text = "Summary"
         '
         'btnRunGRScoinNode
         '
-        Me.hlpDogeNodes.SetHelpKeyword(Me.btnRunGRScoinNode, "")
+        Me.hlpGRSNodes.SetHelpKeyword(Me.btnRunGRScoinNode, "")
         Me.btnRunGRScoinNode.Location = New System.Drawing.Point(57, 324)
         Me.btnRunGRScoinNode.Name = "btnRunGRScoinNode"
-        Me.hlpDogeNodes.SetShowHelp(Me.btnRunGRScoinNode, False)
+        Me.hlpGRSNodes.SetShowHelp(Me.btnRunGRScoinNode, False)
         Me.btnRunGRScoinNode.Size = New System.Drawing.Size(120, 23)
         Me.btnRunGRScoinNode.TabIndex = 6
         Me.btnRunGRScoinNode.Text = "Run Your Own Node"
@@ -311,11 +311,11 @@ Partial Class Form1
         '
         Me.lblTotalNodesValue.BackColor = System.Drawing.Color.Transparent
         Me.lblTotalNodesValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hlpDogeNodes.SetHelpKeyword(Me.lblTotalNodesValue, "")
+        Me.hlpGRSNodes.SetHelpKeyword(Me.lblTotalNodesValue, "")
         Me.lblTotalNodesValue.Image = Global.BlockchainNodes.My.Resources.Resources.Turquoise
         Me.lblTotalNodesValue.Location = New System.Drawing.Point(386, 167)
         Me.lblTotalNodesValue.Name = "lblTotalNodesValue"
-        Me.hlpDogeNodes.SetShowHelp(Me.lblTotalNodesValue, False)
+        Me.hlpGRSNodes.SetShowHelp(Me.lblTotalNodesValue, False)
         Me.lblTotalNodesValue.Size = New System.Drawing.Size(245, 228)
         Me.lblTotalNodesValue.TabIndex = 3
         Me.lblTotalNodesValue.Text = "0000"
@@ -361,11 +361,11 @@ Partial Class Form1
         Me.tabStatistics.Controls.Add(Me.grdStatistics)
         Me.tabStatistics.Controls.Add(Me.comStatistics)
         Me.tabStatistics.Controls.Add(Me.lblStatisticsSelect)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabStatistics, "topic-statistics")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabStatistics, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabStatistics, "topic-statistics")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabStatistics, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabStatistics.Location = New System.Drawing.Point(4, 22)
         Me.tabStatistics.Name = "tabStatistics"
-        Me.hlpDogeNodes.SetShowHelp(Me.tabStatistics, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabStatistics, True)
         Me.tabStatistics.Size = New System.Drawing.Size(795, 404)
         Me.tabStatistics.TabIndex = 2
         Me.tabStatistics.Text = "Statistics"
@@ -479,11 +479,11 @@ Partial Class Form1
         Me.tabNodeList.Controls.Add(Me.lblNodeRowsCount)
         Me.tabNodeList.Controls.Add(Me.gbxFilters)
         Me.tabNodeList.Controls.Add(Me.grdNodeList)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabNodeList, "topic-node list")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabNodeList, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabNodeList, "topic-node list")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabNodeList, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabNodeList.Location = New System.Drawing.Point(4, 22)
         Me.tabNodeList.Name = "tabNodeList"
-        Me.hlpDogeNodes.SetShowHelp(Me.tabNodeList, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabNodeList, True)
         Me.tabNodeList.Size = New System.Drawing.Size(795, 404)
         Me.tabNodeList.TabIndex = 3
         Me.tabNodeList.Text = "Node List"
@@ -688,11 +688,11 @@ Partial Class Form1
         '
         Me.tabNodeMap.Controls.Add(Me.MapControl1)
         Me.tabNodeMap.Controls.Add(Me.lblMapUpdate)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabNodeMap, "topic-node map")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabNodeMap, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabNodeMap, "topic-node map")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabNodeMap, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabNodeMap.Location = New System.Drawing.Point(4, 22)
         Me.tabNodeMap.Name = "tabNodeMap"
-        Me.hlpDogeNodes.SetShowHelp(Me.tabNodeMap, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabNodeMap, True)
         Me.tabNodeMap.Size = New System.Drawing.Size(795, 404)
         Me.tabNodeMap.TabIndex = 5
         Me.tabNodeMap.Text = "Node Map"
@@ -734,12 +734,12 @@ Partial Class Form1
         Me.tabNodestatus.Controls.Add(Me.lblIPAddress)
         Me.tabNodestatus.Controls.Add(Me.txtPort)
         Me.tabNodestatus.Controls.Add(Me.txtIPAddress)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabNodestatus, "topic-node status")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabNodestatus, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabNodestatus, "topic-node status")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabNodestatus, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabNodestatus.Location = New System.Drawing.Point(4, 22)
         Me.tabNodestatus.Name = "tabNodestatus"
         Me.tabNodestatus.Padding = New System.Windows.Forms.Padding(3)
-        Me.hlpDogeNodes.SetShowHelp(Me.tabNodestatus, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabNodestatus, True)
         Me.tabNodestatus.Size = New System.Drawing.Size(795, 404)
         Me.tabNodestatus.TabIndex = 0
         Me.tabNodestatus.Text = "Node Status"
@@ -1104,12 +1104,12 @@ Partial Class Form1
         Me.tabSettings.Controls.Add(Me.gbxWindow)
         Me.tabSettings.Controls.Add(Me.btnRestoreDefaults)
         Me.tabSettings.Controls.Add(Me.gbxThresholdSettings)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.tabSettings, "topic-settings")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.tabSettings, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.tabSettings, "topic-settings")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.tabSettings, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.tabSettings.Location = New System.Drawing.Point(4, 22)
         Me.tabSettings.Name = "tabSettings"
         Me.tabSettings.Padding = New System.Windows.Forms.Padding(3)
-        Me.hlpDogeNodes.SetShowHelp(Me.tabSettings, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.tabSettings, True)
         Me.tabSettings.Size = New System.Drawing.Size(795, 404)
         Me.tabSettings.TabIndex = 4
         Me.tabSettings.Text = "Settings"
@@ -1123,11 +1123,11 @@ Partial Class Form1
         Me.gbxUpdate.Controls.Add(Me.lblInstalledVersionValue)
         Me.gbxUpdate.Controls.Add(Me.lblLatestVersion)
         Me.gbxUpdate.Controls.Add(Me.lblInstalledVersion)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxUpdate, "topic-update dogenodes")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxUpdate, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxUpdate, "topic-update dogenodes")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxUpdate, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxUpdate.Location = New System.Drawing.Point(28, 784)
         Me.gbxUpdate.Name = "gbxUpdate"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxUpdate, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxUpdate, True)
         Me.gbxUpdate.Size = New System.Drawing.Size(715, 100)
         Me.gbxUpdate.TabIndex = 7
         Me.gbxUpdate.TabStop = False
@@ -1216,11 +1216,11 @@ Partial Class Form1
         Me.gbxMapCache.Controls.Add(Me.lblCacheNodes)
         Me.gbxMapCache.Controls.Add(Me.lblPercentageNodesValue)
         Me.gbxMapCache.Controls.Add(Me.lblCacheNodesValue)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxMapCache, "topic-map")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxMapCache, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxMapCache, "topic-map")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxMapCache, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxMapCache.Location = New System.Drawing.Point(28, 530)
         Me.gbxMapCache.Name = "gbxMapCache"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxMapCache, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxMapCache, True)
         Me.gbxMapCache.Size = New System.Drawing.Size(715, 140)
         Me.gbxMapCache.TabIndex = 6
         Me.gbxMapCache.TabStop = False
@@ -1340,11 +1340,11 @@ Partial Class Form1
         Me.gbxLogging.Controls.Add(Me.btnDisplayLog)
         Me.gbxLogging.Controls.Add(Me.chkAllowLogging)
         Me.gbxLogging.Controls.Add(Me.comLogLvl)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxLogging, "topic-logging")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxLogging, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxLogging, "topic-logging")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxLogging, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxLogging.Location = New System.Drawing.Point(28, 407)
         Me.gbxLogging.Name = "gbxLogging"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxLogging, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxLogging, True)
         Me.gbxLogging.Size = New System.Drawing.Size(715, 104)
         Me.gbxLogging.TabIndex = 5
         Me.gbxLogging.TabStop = False
@@ -1435,11 +1435,11 @@ Partial Class Form1
         Me.gbxNotification.Controls.Add(Me.chkAllowEmailNotification)
         Me.gbxNotification.Controls.Add(Me.chkApplicationNotification)
         Me.gbxNotification.Controls.Add(Me.chkWindowsNotification)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxNotification, "topic-notification")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxNotification, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxNotification, "topic-notification")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxNotification, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxNotification.Location = New System.Drawing.Point(28, 184)
         Me.gbxNotification.Name = "gbxNotification"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxNotification, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxNotification, True)
         Me.gbxNotification.Size = New System.Drawing.Size(715, 206)
         Me.gbxNotification.TabIndex = 3
         Me.gbxNotification.TabStop = False
@@ -1643,11 +1643,11 @@ Partial Class Form1
         Me.gbxWindow.Controls.Add(Me.chkMinimiseOnClose)
         Me.gbxWindow.Controls.Add(Me.chkMinimiseToTray)
         Me.gbxWindow.Controls.Add(Me.chkHideTrayIcon)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxWindow, "topic-window")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxWindow, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxWindow, "topic-window")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxWindow, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxWindow.Location = New System.Drawing.Point(28, 45)
         Me.gbxWindow.Name = "gbxWindow"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxWindow, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxWindow, True)
         Me.gbxWindow.Size = New System.Drawing.Size(715, 124)
         Me.gbxWindow.TabIndex = 2
         Me.gbxWindow.TabStop = False
@@ -1784,11 +1784,11 @@ Partial Class Form1
         Me.gbxThresholdSettings.Controls.Add(Me.trkGreenToYellow)
         Me.gbxThresholdSettings.Controls.Add(Me.lblYellowRed)
         Me.gbxThresholdSettings.Controls.Add(Me.lblGreenYellow)
-        Me.hlpDogeNodes.SetHelpKeyword(Me.gbxThresholdSettings, "topic-block height threshold")
-        Me.hlpDogeNodes.SetHelpNavigator(Me.gbxThresholdSettings, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me.gbxThresholdSettings, "topic-block height threshold")
+        Me.hlpGRSNodes.SetHelpNavigator(Me.gbxThresholdSettings, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.gbxThresholdSettings.Location = New System.Drawing.Point(28, 690)
         Me.gbxThresholdSettings.Name = "gbxThresholdSettings"
-        Me.hlpDogeNodes.SetShowHelp(Me.gbxThresholdSettings, True)
+        Me.hlpGRSNodes.SetShowHelp(Me.gbxThresholdSettings, True)
         Me.gbxThresholdSettings.Size = New System.Drawing.Size(715, 76)
         Me.gbxThresholdSettings.TabIndex = 0
         Me.gbxThresholdSettings.TabStop = False
@@ -1985,11 +1985,11 @@ Partial Class Form1
         'StatusStrip1
         '
         Me.StatusStrip1.BackColor = System.Drawing.SystemColors.Control
-        Me.hlpDogeNodes.SetHelpKeyword(Me.StatusStrip1, "")
+        Me.hlpGRSNodes.SetHelpKeyword(Me.StatusStrip1, "")
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.sslAPIProgressBar, Me.sslLastUpdate, Me.sslError})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.hlpDogeNodes.SetShowHelp(Me.StatusStrip1, False)
+        Me.hlpGRSNodes.SetShowHelp(Me.StatusStrip1, False)
         Me.StatusStrip1.ShowItemToolTips = True
         Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
         Me.StatusStrip1.SizingGrip = False
@@ -2118,9 +2118,9 @@ Partial Class Form1
         '
         Me.timTextbox.Interval = 1000
         '
-        'hlpDogeNodes
+        'hlpGRSNodes
         '
-        Me.hlpDogeNodes.HelpNamespace = "DogeNodes.chm"
+        Me.hlpGRSNodes.HelpNamespace = "GRSNodes.chm"
         '
         'Form1
         '
@@ -2130,12 +2130,12 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.TabControl1)
-        Me.hlpDogeNodes.SetHelpKeyword(Me, "topic-introduction")
-        Me.hlpDogeNodes.SetHelpNavigator(Me, System.Windows.Forms.HelpNavigator.KeywordIndex)
+        Me.hlpGRSNodes.SetHelpKeyword(Me, "topic-introduction")
+        Me.hlpGRSNodes.SetHelpNavigator(Me, System.Windows.Forms.HelpNavigator.KeywordIndex)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.hlpDogeNodes.SetShowHelp(Me, True)
+        Me.hlpGRSNodes.SetShowHelp(Me, True)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GRSNodes"
         Me.TabControl1.ResumeLayout(False)
@@ -2332,7 +2332,7 @@ Partial Class Form1
     Friend WithEvents lblAgentPort As Label
     Friend WithEvents comPort As ComboBox
     Friend WithEvents btnRunGRScoinNode As Button
-    Friend WithEvents hlpDogeNodes As HelpProvider
+    Friend WithEvents hlpGRSNodes As HelpProvider
     Friend WithEvents tabHelp As TabPage
     Friend WithEvents gbxInlineHelp As GroupBox
     Friend WithEvents btnInlineHelp As Button
