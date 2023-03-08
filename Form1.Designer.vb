@@ -1810,27 +1810,28 @@ Partial Class Form1
         '
         'trkYellowToRed
         '
+        Me.trkYellowToRed.LargeChange = 1
         Me.trkYellowToRed.Location = New System.Drawing.Point(475, 25)
-        Me.trkYellowToRed.Maximum = 40
         Me.trkYellowToRed.Minimum = 1
         Me.trkYellowToRed.Name = "trkYellowToRed"
         Me.trkYellowToRed.Size = New System.Drawing.Size(104, 45)
         Me.trkYellowToRed.TabIndex = 5
         Me.trkYellowToRed.TickFrequency = 2
         Me.ToolTip1.SetToolTip(Me.trkYellowToRed, "Adjust the threshold at which the block height status changes from yellow to red")
-        Me.trkYellowToRed.Value = 16
+        Me.trkYellowToRed.Value = 10
         '
         'trkGreenToYellow
         '
+        Me.trkGreenToYellow.LargeChange = 1
         Me.trkGreenToYellow.Location = New System.Drawing.Point(172, 25)
-        Me.trkGreenToYellow.Maximum = 20
+        Me.trkGreenToYellow.Maximum = 5
         Me.trkGreenToYellow.Minimum = 1
         Me.trkGreenToYellow.Name = "trkGreenToYellow"
         Me.trkGreenToYellow.Size = New System.Drawing.Size(104, 45)
         Me.trkGreenToYellow.TabIndex = 4
         Me.ToolTip1.SetToolTip(Me.trkGreenToYellow, "Adjust the threshold at which the block height status changes from green to yello" &
         "w")
-        Me.trkGreenToYellow.Value = 6
+        Me.trkGreenToYellow.Value = 5
         '
         'lblYellowRed
         '
