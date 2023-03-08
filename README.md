@@ -1,28 +1,28 @@
-# DogeNodes
+# GRSNodes
 
-![Splash](https://user-images.githubusercontent.com/124823644/217800333-62e54878-27ab-474c-abf4-fa7cf2817073.png)
+![Splash](https://user-images.githubusercontent.com/124823644/223736196-1bdbfa5a-00b2-4488-8162-0674ed2c373d.png)
 
 ## Description
 
-A Windows Forms based application to analyse the Dogecoin blockchain network and monitor the status of an individual node
+A Windows Forms based application to analyse the Groestlcoin blockchain network and monitor the status of an individual node
 
 ## Screenshots
 
-![Summary](https://user-images.githubusercontent.com/124823644/221171087-c6b806ef-80ff-4cc2-9aa1-63bef11a8807.png)
+![Summary](https://user-images.githubusercontent.com/124823644/223736252-0d44cc97-f116-4c55-a882-4908ade35310.png)
 
-![Statistics](https://user-images.githubusercontent.com/124823644/221171110-f54ad8db-7f39-473b-9b21-343a40217507.png)
+![Statistics](https://user-images.githubusercontent.com/124823644/223736332-f16a5ccd-9826-4484-af3e-d8d084126c25.png)
 
-![Node List](https://user-images.githubusercontent.com/124823644/221171148-2a708022-0e5f-4e5e-86f6-311df9ca9e81.png)
+![Node List](https://user-images.githubusercontent.com/124823644/223736422-d7e6a570-6ece-4f6a-878b-341ffdc8e592.png)
 
-![Node Map](https://user-images.githubusercontent.com/124823644/221171161-86b7be96-0e7f-4ccb-9a6f-9b0835c8ba05.png)
+![Node Map](https://user-images.githubusercontent.com/124823644/223736442-d2a312e7-0649-4148-b1b5-b17bf66976ac.png)
 
-![Node Status](https://user-images.githubusercontent.com/124823644/221171183-62a35893-29e6-44a7-a690-67fb15ad748e.png)
+![Node Status](https://user-images.githubusercontent.com/124823644/223736456-527a74f7-9edc-45f1-8a31-67ce3575881d.png)
 
-![Settings(1)](https://user-images.githubusercontent.com/124823644/221171210-884bf3f5-0c98-4f80-897d-aa5b2cc0de64.png)
+![Settings(1)](https://user-images.githubusercontent.com/124823644/223736478-370813b2-bc72-4d8c-b591-fdadde3ef653.png)
 
-![Settings(2)](https://user-images.githubusercontent.com/124823644/221171231-805b3c27-9d71-4ded-bdcb-ff71fb506904.png)
+![Settings(2)](https://user-images.githubusercontent.com/124823644/223736505-50bd1480-b9a9-43f5-b617-9114c5f61844.png)
 
-![Help](https://user-images.githubusercontent.com/124823644/221171250-94c9fdd7-4a93-43fd-a3d4-7787d53f29b0.png)
+![Help](https://user-images.githubusercontent.com/124823644/223736548-b5ffc2d4-f923-43f5-a7dd-e302c3be208e.png)
 
 ## Features
 
@@ -44,8 +44,7 @@ A Windows Forms based application to analyse the Dogecoin blockchain network and
  
 ## To Do List
 
-- Allow pan and zoom in map as well as being able to select a node from the map
-- Fix any other bugs identified by users
+- Fix any bugs identified by users
 - Make enhancements identified by users
  
 ## Acknowledgements
