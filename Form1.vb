@@ -2217,13 +2217,14 @@ Public Class Form1
                 'Only the header row
                 Percentage = 0
             Else
+                If IPAddress = "" Then CacheIndex += 1 'Correction for fully populated cache
                 Percentage = 100 * (CacheIndex - 1) / (IPLocations.GetLength(1) - 1)
                 lblPercentageNodesValue.Text = Percentage.ToString + "%"
             End If
 
             'Display progress underneath the map if it is a long way behind (e.g. after cache clear or first installation)
             If Percentage < 98 Then
-                lblMapUpdate.Text = "The map is currently updating - " + Percentage.ToString + "% complete - approx " + (Convert.ToInt32((100 - Percentage) / 2)).ToString + " minutes to go"
+                lblMapUpdate.Text = "The map is currently updating - " + Percentage.ToString + "% complete - approx " + (Convert.ToInt32((100 - Percentage) / 20)).ToString + " minutes to go"
                 'Refresh the map every 30 seconds
                 MapRefreshCounter += 1
                 If MapRefreshCounter = 10 Then
@@ -2267,9 +2268,9 @@ Public Class Form1
             Else
 
                 'No need to add location data to an address, so remove first line from array instead to force gradual refresh
-                'We want to remove one line per minute so need counter to limit rate
+                'We want to remove one line per 10 minutes so need counter to limit rate
                 CacheCounter += 1
-                If CacheCounter = 20 Then
+                If CacheCounter = 200 Then
                     CacheCounter = 0
                     Remove_First_Row_From_Cache()
                 End If
@@ -2409,7 +2410,7 @@ Public Class Form1
 
         Try
             'Clear the map cache
-            If Request_Confirmation("If you clear the cache, it will take approximately 1 hour to rebuild itself") = True Then
+            If Request_Confirmation("If you clear the cache, it will take approximately 5 minutes to rebuild itself") = True Then
 
                 'Clear the cache keeping just the header row
                 ReDim Preserve IPLocations(2, 0)
