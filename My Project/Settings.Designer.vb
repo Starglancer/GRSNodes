@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3")>  _
         Public Property GreenToYellow() As Integer
             Get
                 Return CType(Me("GreenToYellow"),Integer)
@@ -104,7 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("4")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("6")>  _
         Public Property YellowToRed() As Integer
             Get
                 Return CType(Me("YellowToRed"),Integer)
@@ -116,7 +116,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3")>  _
         Public ReadOnly Property GreenToYellowDefault() As Integer
             Get
                 Return CType(Me("GreenToYellowDefault"),Integer)
@@ -125,7 +125,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("4")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("6")>  _
         Public ReadOnly Property YellowToRedDefault() As Integer
             Get
                 Return CType(Me("YellowToRedDefault"),Integer)
