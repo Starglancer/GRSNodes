@@ -44,6 +44,7 @@ A Windows Forms based application to analyse the Groestlcoin blockchain network 
  
 ## To Do List
 
+- Fix issue with high background cpu usage
 - Fix any bugs identified by users
 - Make enhancements identified by users
  
@@ -54,5 +55,6 @@ Thanks to the following API providers used as the source of data for this applic
 - [Blockchair](https://blockchair.com/)
 - [IP-API](https://ip-api.com/)
 - [Github](https://github.com/)
+- [OpenStreetMap](https://www.openstreetmap.org/)
 
 Thanks to [Advanced Installer](https://www.advancedinstaller.com/) for their excellent installer which has been used from release 1.00 onwards
