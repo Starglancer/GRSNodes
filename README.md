@@ -44,7 +44,6 @@ A Windows Forms based application to analyse the Groestlcoin blockchain network 
  
 ## To Do List
 
-- Fix issue with high background cpu usage
 - Fix any bugs identified by users
 - Make enhancements identified by users
  
