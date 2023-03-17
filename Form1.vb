@@ -2625,7 +2625,7 @@ Public Class Form1
 
             Try
                 Notification_Display("Information", "The API download of latest GRSNodes version from github has started")
-                jsonVersion = client.DownloadString("https://api.github.com/repos/starglancer/dogenodes/releases/latest")
+                jsonVersion = client.DownloadString("https://api.github.com/repos/starglancer/grsnodes/releases/latest")
                 Notification_Display("Information", "The API download of latest GRSNodes version from github has completed successfully")
             Catch ex As Exception
                 Notification_Display("Error", "Github API is unreachable. Please check network connection", ex)
