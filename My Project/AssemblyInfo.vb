@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,11 +9,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("BlockchainNodes")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("AlienWare")>
-<Assembly: AssemblyProduct("BlockchainNodes")>
-<Assembly: AssemblyCopyright("Copyright © AlienWare 2023")>
+<Assembly: AssemblyTitle("GRSNodes")>
+<Assembly: AssemblyDescription("Blockchain Node analyser and monitor")>
+<Assembly: AssemblyCompany("Starglancer")>
+<Assembly: AssemblyProduct("GRSNodes")>
+<Assembly: AssemblyCopyright("Copyright © Starglancer 2023")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +32,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.6.0.0")>
+<Assembly: AssemblyFileVersion("1.6.0.0")>
+<Assembly: NeutralResourcesLanguage("en-GB")>
