@@ -48,6 +48,7 @@ A Windows Forms based application to analyse the Groestlcoin blockchain network 
 - Enable LiteNodes, GRSNodes and DogeNodes to run side by side on same computer
 - Set application window to retain position when minimised and restored
 - Add option to tray menu to clear the log file
+- Go to end of log file in Notepad once opened
 - Fix any bugs identified by users
 - Make enhancements identified by users
  
