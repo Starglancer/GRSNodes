@@ -533,7 +533,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("v1.60")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("v1.70")>  _
         Public ReadOnly Property GRSNodesVersion() As String
             Get
                 Return CType(Me("GRSNodesVersion"),String)
